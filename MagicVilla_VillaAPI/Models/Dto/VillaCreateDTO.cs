@@ -16,6 +16,7 @@ namespace MagicVilla_VillaAPI.Models.Dto
         public int Occupancy { get; set; }
         public string ImageUrl { get; set; }
         public string Amenity { get; set; }
-        public bool IsDeleted { get; set; }
+
+        //public bool IsDeleted { get; set; }
     }
 }

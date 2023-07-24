@@ -1,3 +1,4 @@
+using MagicVilla_VillaAPI;
 using MagicVilla_VillaAPI.Data;
 using MagicVilla_VillaAPI.logging;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 ////telling the application to use above logger not built in logger
 //builder.Host.UseSerilog();
+
+builder.Services.AddAutoMapper(typeof(MappingConfig));
 
 builder.Services.AddDbContext<ApplicationDbContext>(option => //So what we are doing is where we have the application DB context, we are passing the connection string.
 {
