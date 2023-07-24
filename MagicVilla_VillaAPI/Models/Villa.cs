@@ -17,5 +17,7 @@ namespace MagicVilla_VillaAPI.Models
         public string Amenity { get; set; }
         public DateTime CreatedDate { get; set; } // we should not expose this so this will not be present in DTO
         public DateTime UpdatedDate { get; set;}
+
+        public bool IsDeleted { get; set; }
     }
 }
